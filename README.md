@@ -6,6 +6,6 @@ Dev stands for Developer and Hops stands for Hopping and together DevHops means 
 
 ### What it does?
 
+It currently represents a basic model for a classic load balancer.
 
-All the adhoc tasks ranging from installing nginx, mysql or to run a custom script, all a click away.
-
+### Installation
