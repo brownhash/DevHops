@@ -30,4 +30,5 @@ $ cd DevHops
 $ python3 main.py
 
 -> Open http://localhost:5000/
+-> use "admin" as username and "root" as password
 ```
