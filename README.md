@@ -1,7 +1,7 @@
 # DevHops
 ### What does DevHops mean?
 
-Dev stands for Developer and Hops stands for Hopping and together DevHops means to Hop the operations step carried out by the developers.
+Dev stands for Developer and Hops stands for Hopping and together DevHops stands for hopping the operations carried out by the developers.
 
 
 ### What it does?
