@@ -4,14 +4,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     </head>
-    <body style="font-family: 'Ubuntu', sans-serif;">
+    <body style="background-color: #000000;font-family: 'Ubuntu', sans-serif;">
         <center>
-        <div class="card" style="background-color:#252525; width:85%; margin-top:10px">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 28rem; margin-top:50px">
+            <div class="card-header"><h2>DevHops</h2></div>
             <div class="card-body">
-                <h2 style="color:#d3d3d3">DevHops</h2>
+                <form action="http://localhost:5000/login" method="post">
+                    <input name="username" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Username"></br>
+                    <input name="password" type="password" class="form-control" placeholder="Password"></br>
+                    <input class="btn btn-light" type="submit" value="Login">
+                </form>
             </div>
         </div>
-        <a href="http://localhost:5000/terminal">Terminal</a>
+
+
         </center>
 
 
