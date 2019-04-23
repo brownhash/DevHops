@@ -59,5 +59,13 @@ def logout():
     f.close()
     return render_template("index.html")
 
+@app.route("/load")
+def load():
+    f=open("count.txt","r")
+    r=f.read()
+    counter=int(r)
+    f.close()
+    return (counter)
+
 if __name__ == "__main__":
     app.run(debug=True)
