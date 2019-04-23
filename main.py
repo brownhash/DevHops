@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 app = Flask(__name__)
 
 @app.route("/")
@@ -36,7 +36,12 @@ def login():
            f=open("count.txt","w")
            f.write(str(counter))
            f.close()
-           return render_template("main.html",result = user)
+           if(counter < 3):
+               return redirect("http://www.google.com")
+           elif(counter > 2 and counter < 6):
+               return redirect("http://www.facebook.com")
+           else:
+               return ("Server over loaded")
        else:
            return render_template("loginerror.html")
 
