@@ -25,10 +25,23 @@ $ sudo apt-get install git
 ### Execution
 
 ```bash
+$ cd /etc/nginx/sites-available/
+$ sudo vim default
+  #use this configuration
+  server {
+    listen       80;
+    server_name  your_public_dnsname_here;
+
+    location / {
+        proxy_pass http://127.0.0.1:5000;
+    }
+  }
+$ sudo systemctl restart nginx
+$ cd /home/
 $ git clone https://github.com/sharma1612harshit/DevHops
 $ cd DevHops
 $ python3 main.py
 
--> Open http://localhost:5000/
+-> Open http://localhost:5000/ or http://ip_addr
 -> use "admin" as username and "root" as password
 ```
