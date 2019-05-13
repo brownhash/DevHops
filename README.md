@@ -12,21 +12,21 @@ It currently represents a basic model for a classic load balancer.
 
 ```bash
 $ sudo apt-get update
-$ sudo apt-get install python3-pip python3-dev nginx
+$ sudo apt-get install python3-pip python3-dev nginx git vim
 $ sudo pip3 install virtualenv
 $ mkdir ~/flaskproject
 $ cd ~/flaskproject
 $ virtualenv flaskprojectenv
 $ source flaskprojectenv/bin/activate
-$ pip install gunicorn flask
-$ sudo apt-get install git
+$ pip3 install gunicorn flask
 ```
 
 ### Execution
 
 ```bash
-$ cd /etc/nginx/sites-available/
-$ sudo vim default
+$ cd /home/username/
+$ sudo vim /etc/nginx/sites-available/default
+
   #use this configuration
   server {
     listen       80;
@@ -36,12 +36,11 @@ $ sudo vim default
         proxy_pass http://127.0.0.1:5000;
     }
   }
+  
 $ sudo systemctl restart nginx
-$ cd /home/
 $ git clone https://github.com/sharma1612harshit/DevHops
-$ cd DevHops
-$ python3 main.py
+$ python3 DevHops/main.py
 
--> Open http://localhost:5000/ or http://ip_addr
+-> Open http://ip_addr
 -> use "admin" as username and "root" as password
 ```
